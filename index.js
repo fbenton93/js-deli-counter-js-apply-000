@@ -7,11 +7,13 @@ function takeANumber(katzDeliLine) {
   return `You are number ${personsNumber} in line.`;
 }
 
+
+
 function nowServing(katzDeliLine) {
   if (!katzDeliLine.length) {
     return "There is nobody waiting to be served!";
   } else {
-    return `Currently serving ${katzDeliLine.shift()}.`;
+    return `Currently serving number ${katzDeliLine.shift()}.`;
   }
 }
 
